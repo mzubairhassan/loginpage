@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        .container-fluid {
+            height: 100vh;
+            background: no-repeat url(back-img.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .col-md-5 {
+            margin: 0;
+        }
+        .col-md-7 {
+            height: 100vh;
+        }
+        .head {
+            height: 20vh;
+        }
+        .body {
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row;
+            align-content: center;
+            
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            width: 81%;
+            justify-content: flex-start;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            width: 15%;
+            margin-right: 20px;
+        }
+        .orgname h2 {
+            font-size: 1.5vw;
+        }
+        .orgname p {
+            font-size: 1vw;
+        }
+        .loginform {
+            position: relative;
+            top: 6vh;
+            width: 50%;
+           height: fit-content;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1024px){
+            .header {
+            display: flex;
+            width: 96%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+            .loginform {
+                width: 70%;
+            }
+        }
+
+        .loginform h2 {
+            font-size: 3vw;
+        }
+        form {
+            display: flex;
+            padding: 0;
+            margin-top: 2vw;
+
+        }
+        form ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            
+        }
+        form li {
+            display: flex;
+            margin-top: 1.5vh;
+            
+        }
+        form li label {
+            flex: 1 0 120px;
+        }
+        form li:nth-child(3) a{
+            margin: 0px 10% 0px 40%;
+            color: #b1afaf;
+        }
+        form li:nth-child(4) {
+            justify-content: flex-end;  
+        }
+        form li input:not([type="submit"]) {
+            width: 60%;
+        }
+        form li input[type="submit"] {
+            background: green;
+            border: 2px solid green;
+            color: white;
+            border-radius: 3px;
+        }
+        .col-md-7 {
+            padding: 0;
+            margin: 0
+        }
+        .overlaywhite {
+            height: 100vh;
+            width: 100px;
+            background: white;
+            margin: 0;
+            padding: 
+            0;
+        }
+        .firstrow {
+            background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to right, rgb(255, 255, 255), rgba(0,0,0,0)),linear-gradient(to right, rgb(255, 255, 255), rgba(0,0,0,0));
+            
+           
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row firstrow">
+            <div class="col-md-5">
+                <div class="row head">
+                    <div class="header">
+                        <div class="logo">
+                                <img src="logo.jpeg" width="200px" height="200px" class="img-fluid" />
+                        </div>
+                        <div class="orgname">
+                            <h2>Organization Header Name</h2>
+                            <p>Enterprise Resource Planning</p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="row body">
+                   
+                    <div class="loginform">
+                        <h2>Sign In</h2>
+                        <form action="#">
+                            <ul>
+                                <li>
+                                    <label>Username</label>
+                                    <input type="text" id="username" maxlength="17" />
+                                </li>
+                                <li>
+                                    <label>Password</label>
+                                    <input type="password" id="password" />
+                                   
+                                </li>
+                                <li> <a href="#" class="forgotpassword">Forgot Password ?</a></li>
+                                <li>
+                                    <input type="submit" id="submit" value="Log In" />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-7">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
